@@ -1,0 +1,116 @@
+@use "variables";
+@use "extend";
+@use "mixin";
+@use "if";
+
+header {
+    @extend .flex;
+    padding: 0 100px;
+    flex-direction: column;
+    height: 500px;
+    background-image: url("../img/bg-pattern-intro.svg"), linear-gradient(176deg, #ff8f70 0%, #ff3d54 100%);
+    background-size: 200%;
+    background-position:17% 50%;
+    border-bottom-left-radius: 100px;
+    color: variables.$primary-color;
+
+    .#{&}-nav-bar {
+        @extend .flex;
+        width: 100%;
+    }
+
+    .#{&}-menu {
+        @extend .flex;
+        justify-content: flex-start;
+        width: 60%;
+        height: 150px;
+
+        img {
+            padding-right: 50px;
+            transform: scale(0.7)
+        }
+
+        li {
+            cursor: pointer;
+            @include mixin.font;
+            display: inline-block;
+            margin: 0 30px;
+
+            img {
+                padding: initial;
+                transform: initial;
+                filter: grayscale(100%) brightness(200%);
+                
+            }
+        }
+    }
+
+    .#{&}-buttons {
+        @extend .flex;
+        justify-content: center;
+        width: 40%;        
+    
+        button:nth-of-type(2):hover{
+            @include mixin.button-red();
+        }
+    }
+    
+
+    @each $button in 1,2{
+        .#{&}-buttons button:nth-of-type(#{$button}){
+            padding: 3% 12%;
+            @include mixin.font();
+            @include if.color(#{$button});
+            @include if.bg(#{$button});
+        }
+    }
+
+    .#{&}-hero{
+        @extend .flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: calc(500px - 150px);
+
+        h1 {
+            font-size: 3em;
+            font-weight: 500;
+            
+        }
+        p{
+            margin: 15px 0 40px 0;
+            font-weight: 400;
+        }
+
+        .header-hero-buttons{
+            @extend .flex;
+            height: 100px;
+            justify-content: center;
+            width: 40%;
+
+            button {
+                @include mixin.font;
+                margin: 0 10px;
+                padding: 3%;
+            }
+        }
+
+        @each $button in 1,2 {
+            .header-hero-buttons button:nth-of-type(#{$button}){
+                @if($button) == 1{
+                    @include mixin.button-white();
+                    &:hover{
+                        @include mixin.button-red();
+                    }
+                }
+                @else{
+                    @include mixin.button-red();
+                    &:hover{
+                        @include mixin.button-white();
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

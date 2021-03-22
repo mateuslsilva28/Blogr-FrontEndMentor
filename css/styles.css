@@ -1,3 +1,132 @@
+.flex, header, header .header-nav-bar, header .header-menu, header .header-buttons, header .header-hero, header .header-hero .header-hero-buttons {
+  display: flex;
+  align-items: center;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+header {
+  padding: 0 100px;
+  flex-direction: column;
+  height: 500px;
+  background-image: url("../img/bg-pattern-intro.svg"), linear-gradient(176deg, #ff8f70 0%, #ff3d54 100%);
+  background-size: 200%;
+  background-position: 17% 50%;
+  border-bottom-left-radius: 100px;
+  color: #fff;
+}
+header .header-nav-bar {
+  width: 100%;
+}
+header .header-menu {
+  justify-content: flex-start;
+  width: 60%;
+  height: 150px;
+}
+header .header-menu img {
+  padding-right: 50px;
+  transform: scale(0.7);
+}
+header .header-menu li {
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 30px;
+}
+header .header-menu li img {
+  padding: initial;
+  transform: initial;
+  filter: grayscale(100%) brightness(200%);
+}
+header .header-buttons {
+  justify-content: center;
+  width: 40%;
+}
+header .header-buttons button:nth-of-type(2):hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: 1px solid #fff;
+}
+header .header-buttons button:nth-of-type(1) {
+  padding: 3% 12%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+header .header-buttons button:nth-of-type(2) {
+  padding: 3% 12%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #FF7A85;
+  background-color: #fff;
+}
+header .header-hero {
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: calc(500px - 150px);
+}
+header .header-hero h1 {
+  font-size: 3em;
+  font-weight: 500;
+}
+header .header-hero p {
+  margin: 15px 0 40px 0;
+  font-weight: 400;
+}
+header .header-hero .header-hero-buttons {
+  height: 100px;
+  justify-content: center;
+  width: 40%;
+}
+header .header-hero .header-hero-buttons button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 3%;
+}
+header .header-hero .header-hero-buttons button:nth-of-type(1) {
+  background-color: #fff;
+  color: #FF7A85;
+}
+header .header-hero .header-hero-buttons button:nth-of-type(1):hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: 1px solid #fff;
+}
+header .header-hero .header-hero-buttons button:nth-of-type(2) {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: 1px solid #fff;
+}
+header .header-hero .header-hero-buttons button:nth-of-type(2):hover {
+  background-color: #fff;
+  color: #FF7A85;
+  border: none;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,35 @@
+@use 'variables';
+
+
+@function set-text-color($number){
+    @if ($number) == 1 {
+        @return variables.$primary-color;
+    }
+    @else {
+        @return variables.$secondary-color;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+}

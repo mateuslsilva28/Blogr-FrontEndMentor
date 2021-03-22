@@ -1,0 +1,18 @@
+@use "variables";
+@use "if";
+
+@mixin font {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+@mixin button-white {
+    @include if.bg(2);
+    @include if.color(2);
+}
+
+@mixin button-red {
+    @include if.bg("1");
+    @include if.color("1");
+    border: 1px solid variables.$primary-color;
+}

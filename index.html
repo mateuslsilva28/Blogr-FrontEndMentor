@@ -5,10 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treino Sass</title>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header class="header" style="background-color: red;">
+        <section class="header-nav-bar">
+            <nav class="header-menu">
+                <a href="#"><img src="img/logo.svg" alt="Logo Blogr" id="header-menu-logo"></a>
+                <ul>
+                    <li>
+                        <a>Product</a>
+                        <img src="img/icon-arrow-dark.svg" class="arrow">
+                    </li>
+                    <li>
+                        <a>Company</a>
+                        <img src="img/icon-arrow-dark.svg" class="arrow">
+                    </li>
+                    <li>
+                        <a>Connect</a>
+                        <img src="img/icon-arrow-dark.svg" class="arrow">
+                    </li>
+                </ul>
+            </nav>
+            <section class="header-buttons">
+                <button id="login">Login</button>
+                <button id="signup">Sign Up</button>
+            </section>
+        </section>
+        <section class="header-hero">
+            <h1 class="header-hero-title">A modern publishing platform</h1>
+            <p id="header-hero-sub-title">Grown your audience and build your online brand</p>
+            <div class="header-hero-buttons">
+                <button id="start">Start for Free</button>
+                <button id="more">Learn More</button>
+            </div>
+        </section>
+    </header>
 </body>
 </html>

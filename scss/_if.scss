@@ -1,0 +1,27 @@
+@use "variables";
+
+@function set-color($number){
+    @if ($number) == "1" {
+        @return variables.$primary-color;
+    }
+    @else {
+        @return variables.$secondary-color;
+    }
+}
+
+@function set-background($number){
+    @if ($number) == "1" {
+        @return rgba(0,0,0,0);
+    }
+    @else {
+        @return variables.$primary-color;
+    }
+}
+
+@mixin color ($number) {
+    color: set-color($number)
+}
+
+@mixin bg($number){
+    background-color: set-background($number);
+}
