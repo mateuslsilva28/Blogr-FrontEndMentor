@@ -1,4 +1,4 @@
-.flex, header, header .header-nav-bar, header .header-menu, header .header-buttons, header .header-hero, header .header-hero .header-hero-buttons {
+.flex, .sections #section-1, .sections #section-1 .content-section-1, .sections #section-1 .content-section-1 .flex-section-1, header, header .header-nav-bar, header .header-menu, header .header-buttons, header .header-hero, header .header-hero .header-hero-buttons {
   display: flex;
   align-items: center;
 }
@@ -127,6 +127,59 @@ header .header-hero .header-hero-buttons button:nth-of-type(2):hover {
   background-color: #fff;
   color: #FF7A85;
   border: none;
+}
+
+.sections {
+  padding: 7rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+.sections h1 {
+  font-family: "Overpass", sans-serif;
+  color: #2C2D3F;
+  font-size: 1.5rem;
+}
+.sections h2 {
+  font-weight: 600;
+}
+.sections p {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  margin: 1.5rem 0 2.5rem 0;
+  line-height: 1.5rem;
+}
+.sections h2, .sections p {
+  font-family: "Overpass", sans-serif;
+  color: #2C2D3F;
+}
+.sections #section-1 {
+  justify-content: center;
+  width: 100%;
+}
+.sections #section-1 .content-section-1 {
+  flex-direction: column;
+  width: 80%;
+}
+.sections #section-1 .content-section-1 .flex-section-1 {
+  width: 100%;
+  justify-content: space-between;
+}
+.sections #section-1 .content-section-1 .flex-section-1 .img-section-1 {
+  width: 50%;
+}
+.sections #section-1 .content-section-1 .flex-section-1 .img-section-1 img {
+  position: relative;
+  left: 14rem;
+  width: 100%;
+  transform: scale(1.4);
+}
+.sections #section-1 .content-section-1 .flex-section-1 .text-section-1 {
+  padding-top: 5.5rem;
+  width: 50%;
+}
+.sections #section-1 .content-section-1 .flex-section-1 .text-section-1 p {
+  color: #4b5862;
 }
 
 /*# sourceMappingURL=styles.css.map */

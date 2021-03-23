@@ -6,6 +6,11 @@
     font-weight: bold;
 }
 
+@mixin font-section {
+    font-family: 'Overpass', sans-serif;
+    color: variables.$title-color;
+}
+
 @mixin button-white {
     @include if.bg(2);
     @include if.color(2);

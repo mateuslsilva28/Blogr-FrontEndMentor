@@ -1,0 +1,69 @@
+@use "variables";
+@use "extend";
+@use "mixin";
+@use "if";
+
+.sections{
+    padding: 7rem 0;
+    width: 100%;
+    overflow: hidden;
+    
+    h1{
+        @include mixin.font-section;
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-weight: 600;
+    }
+
+    p{
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        font-size: 0.9rem;
+        margin: 1.5rem 0 2.5rem 0;
+        line-height: 1.5rem;
+    }
+    
+    h2, p{
+        @include mixin.font-section;
+    }
+
+    #section-1 {
+        @extend .flex;
+        justify-content: center;
+        width: 100%;
+
+        .content-section-1{
+            @extend .flex;
+            flex-direction: column;
+            width: 80%;
+            
+            .flex-section-1{
+                @extend .flex;
+                width: 100%;
+                justify-content: space-between;
+
+                .img-section-1{
+                    width: 50%;
+
+                    img{
+                        position: relative;
+                        left: 14rem;
+                        width: 100%;
+                        transform: scale(1.4);
+                    }
+                }
+
+                .text-section-1{
+                    padding-top: 5.5rem;
+                    width: 50%;
+
+                    p{
+                        color: #4b5862;
+                    }
+                }
+            }
+        }
+    }
+}
