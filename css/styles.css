@@ -1,4 +1,4 @@
-.flex, .sections #section-1, .sections #section-1 .content-section-1, .sections #section-1 .content-section-1 .flex-section-1, .sections #section-2, .sections #section-2 .content-section-2, .sections #section-3, .sections #section-3 .content-section-3, .sections #section-3 .content-section-3 .flex-section-3, header, header .header-nav-bar, header .header-menu, header .header-buttons, header .header-hero, header .header-hero .header-hero-buttons {
+.flex, footer, footer nav, .sections #section-1, .sections #section-1 .content-section-1, .sections #section-1 .content-section-1 .flex-section-1, .sections #section-2, .sections #section-2 .content-section-2, .sections #section-3, .sections #section-3 .content-section-3, .sections #section-3 .content-section-3 .flex-section-3, header, header .header-nav-bar, header .header-menu, header .header-buttons, header .header-hero, header .header-hero .header-hero-buttons {
   display: flex;
   align-items: center;
 }
@@ -166,7 +166,6 @@ header .header-hero .header-hero-buttons button:nth-of-type(2):hover {
 .sections #section-1 .content-section-1 .flex-section-1 {
   width: 100%;
   justify-content: space-between;
-  background-color: red;
 }
 .sections #section-1 .content-section-1 .flex-section-1 .img-section-1 {
   width: 50%;
@@ -240,6 +239,33 @@ header .header-hero .header-hero-buttons button:nth-of-type(2):hover {
 }
 .sections #section-3 .content-section-3 .text-section-3 p {
   color: #4b5862;
+}
+
+footer {
+  justify-content: center;
+  width: 100%;
+  background-color: #25252D;
+  margin-top: 5rem;
+  border-top-right-radius: 70px;
+  padding: 4rem 0;
+}
+footer nav {
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 14rem 0 0;
+  color: #BEC8C2;
+}
+footer nav li {
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+footer nav li a:hover {
+  text-decoration: underline;
+}
+footer nav ul li:first-of-type {
+  color: #fff;
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

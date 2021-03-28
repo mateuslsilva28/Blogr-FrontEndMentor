@@ -2,3 +2,36 @@
 @use "extend";
 @use "mixin";
 @use "if";
+
+footer{
+    @extend .flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #25252D;
+    margin-top: 5rem;
+    border-top-right-radius: 70px;
+    padding: 4rem 0;
+
+    nav{
+        @extend .flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0 14rem 0 0;
+        color: variables.$text-color;
+        
+        li{
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+
+        ul li:first-of-type{
+            color: variables.$primary-color;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

@@ -43,7 +43,6 @@
                 @extend .flex;
                 width: 100%;
                 justify-content: space-between;
-                background-color: red;
 
                 .img-section-1{
                     width: 50%;
@@ -95,7 +94,7 @@
             }
 
             .text-section-2 h1{color: variables.$primary-color;}
-            .text-section-2 p{color: #BEC8C2;}
+            .text-section-2 p{color: variables.$text-color;}
         }
     }
     /*SECTION 3*/
