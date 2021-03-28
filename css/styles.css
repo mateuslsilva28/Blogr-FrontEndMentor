@@ -1,4 +1,4 @@
-.flex, .sections #section-1, .sections #section-1 .content-section-1, .sections #section-1 .content-section-1 .flex-section-1, .sections #section-2, .sections #section-2 .content-section-2, header, header .header-nav-bar, header .header-menu, header .header-buttons, header .header-hero, header .header-hero .header-hero-buttons {
+.flex, .sections #section-1, .sections #section-1 .content-section-1, .sections #section-1 .content-section-1 .flex-section-1, .sections #section-2, .sections #section-2 .content-section-2, .sections #section-3, .sections #section-3 .content-section-3, .sections #section-3 .content-section-3 .flex-section-3, header, header .header-nav-bar, header .header-menu, header .header-buttons, header .header-hero, header .header-hero .header-hero-buttons {
   display: flex;
   align-items: center;
 }
@@ -133,6 +133,8 @@ header .header-hero .header-hero-buttons button:nth-of-type(2):hover {
   padding: 7rem 0;
   width: 100%;
   overflow: hidden;
+  /*SECTION 2*/
+  /*SECTION 3*/
 }
 .sections h1 {
   font-family: "Overpass", sans-serif;
@@ -164,6 +166,7 @@ header .header-hero .header-hero-buttons button:nth-of-type(2):hover {
 .sections #section-1 .content-section-1 .flex-section-1 {
   width: 100%;
   justify-content: space-between;
+  background-color: red;
 }
 .sections #section-1 .content-section-1 .flex-section-1 .img-section-1 {
   width: 50%;
@@ -208,6 +211,35 @@ header .header-hero .header-hero-buttons button:nth-of-type(2):hover {
 }
 .sections #section-2 .content-section-2 .text-section-2 p {
   color: #BEC8C2;
+}
+.sections #section-3 {
+  justify-content: center;
+  width: 100%;
+  margin-top: 10rem;
+}
+.sections #section-3 .content-section-3 {
+  flex-direction: column;
+  width: 80%;
+}
+.sections #section-3 .content-section-3 .flex-section-3 {
+  width: 100%;
+  justify-content: space-between;
+}
+.sections #section-3 .content-section-3 .flex-section-3 .img-section-3 {
+  width: 50%;
+}
+.sections #section-3 .content-section-3 .flex-section-3 .img-section-3 img {
+  position: relative;
+  left: -15rem;
+  width: 100%;
+  transform: scale(1.6);
+}
+.sections #section-3 .content-section-3 .text-section-3 {
+  padding-top: 5.5rem;
+  width: 50%;
+}
+.sections #section-3 .content-section-3 .text-section-3 p {
+  color: #4b5862;
 }
 
 /*# sourceMappingURL=styles.css.map */

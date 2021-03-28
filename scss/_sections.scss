@@ -43,6 +43,7 @@
                 @extend .flex;
                 width: 100%;
                 justify-content: space-between;
+                background-color: red;
 
                 .img-section-1{
                     width: 50%;
@@ -66,7 +67,7 @@
             }
         }
     }
-
+    /*SECTION 2*/
     #section-2{
         @extend .flex;
         justify-content: center;
@@ -95,6 +96,44 @@
 
             .text-section-2 h1{color: variables.$primary-color;}
             .text-section-2 p{color: #BEC8C2;}
+        }
+    }
+    /*SECTION 3*/
+    #section-3{
+        @extend .flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10rem;
+
+        .content-section-3{
+            @extend .flex;
+            flex-direction: column;
+            width: 80%;
+
+            .flex-section-3{
+                @extend .flex;
+                width: 100%;
+                justify-content: space-between;
+
+                .img-section-3{
+                    width: 50%;
+
+                    img{
+                        position: relative;
+                        left: -15rem;
+                        width: 100%;
+                        transform: scale(1.6);
+                    }
+                }
+            }
+            .text-section-3{
+                padding-top: 5.5rem;
+                width: 50%;
+
+                p{
+                    color: #4b5862;
+                }
+            }
         }
     }
 }
