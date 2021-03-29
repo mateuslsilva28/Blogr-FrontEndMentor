@@ -49,8 +49,8 @@
 
                     img{
                         position: relative;
-                        left: 14rem;
-                        width: 100%;
+                        right: -14rem;
+                        width: 549px;
                         transform: scale(1.4);
                     }
                 }
@@ -118,10 +118,10 @@
                     width: 50%;
 
                     img{
+                        max-width: 880px!important;
                         position: relative;
                         left: -15rem;
-                        width: 100%;
-                        transform: scale(1.6);
+                        width: 130%;
                     }
                 }
             }

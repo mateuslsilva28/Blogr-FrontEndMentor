@@ -1,0 +1,28 @@
+.active{display: flex!important;}
+.transform{transform: rotate(180deg)!important;}
+.hide{display: none!important;}
+.show-top{position: relative!important; top: 0vh!important;}
+
+@media (min-width:1024px){
+    header .header-nav-bar .toggle, .show-top{display: none;}
+}
+@media (max-width:1023px){
+    header{
+        padding: 0 35px;
+        height: 600px;
+
+    }
+    .header-menu ul, .header-nav-bar .header-buttons{display: none;}
+    .toggle{display: block;}
+}
+
+@media (max-width:300px){
+    .header-hero-buttons{
+        flex-direction: column;
+
+        button{
+            padding: 0.6rem!important;
+            margin: 10px 0!important;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 @use "variables";
 @use "if";
 
+
 @mixin font {
     font-size: 1.1rem;
     font-weight: bold;
@@ -9,6 +10,28 @@
 @mixin font-section {
     font-family: 'Overpass', sans-serif;
     color: variables.$title-color;
+}
+
+@mixin button ($hover, $button){
+    button:nth-of-type(#{$button}){
+        @if($button) == 1{
+            @include button-white();
+            @if($hover) == true{
+                &:hover{
+                    @include button-red();
+                }
+            }
+        }
+        @else{
+            @include button-red();
+            @if($hover)==true{
+                &:hover{
+                    @include button-white();
+                    border: none;
+                }
+            }
+        }
+    }
 }
 
 @mixin button-white {

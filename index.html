@@ -10,32 +10,89 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/211df2135d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header" style="background-color: red;">
+    <header class="header">
         <section class="header-nav-bar">
             <nav class="header-menu">
                 <a href="#"><img src="img/logo.svg" alt="Logo Blogr" id="header-menu-logo"></a>
                 <ul>
-                    <li>
+                    <li class="item-header-menu">
                         <a>Product</a>
                         <img src="img/icon-arrow-dark.svg" class="arrow">
+                        <ul class="header-sub-menu">
+                            <li><a>Overview</a></li>
+                            <li><a>Pricing</a></li>
+                            <li><a>Marketplace</a></li>
+                            <li><a>Features</a></li>
+                            <li><a>Integrations</a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="item-header-menu">
                         <a>Company</a>
                         <img src="img/icon-arrow-dark.svg" class="arrow">
+                        <ul class="header-sub-menu">
+                            <li><a>About</a></li>
+                            <li><a>Team</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Careers</a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="item-header-menu">
                         <a>Connect</a>
                         <img src="img/icon-arrow-dark.svg" class="arrow">
+                        <ul class="header-sub-menu">
+                            <li><a>Contact</a></li>
+                            <li><a>Newsletter</a></li>
+                            <li><a>Linkedin</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
+            <i class="toggle fas fa-bars"></i>
             <section class="header-buttons">
                 <button id="login">Login</button>
                 <button id="signup">Sign Up</button>
             </section>
         </section>
+        <nav class="header-menu-mobile">
+            <ul>
+                <li class="item-header-menu">
+                    <a>Product</a>
+                    <img src="img/icon-arrow-dark.svg" class="arrow">
+                    <ul class="header-sub-menu">
+                        <li><a>Overview</a></li>
+                        <li><a>Pricing</a></li>
+                        <li><a>Marketplace</a></li>
+                        <li><a>Features</a></li>
+                        <li><a>Integrations</a></li>
+                    </ul>
+                </li>
+                <li class="item-header-menu">
+                    <a>Company</a>
+                    <img src="img/icon-arrow-dark.svg" class="arrow">
+                    <ul class="header-sub-menu">
+                        <li><a>About</a></li>
+                        <li><a>Team</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Careers</a></li>
+                    </ul>
+                </li>
+                <li class="item-header-menu">
+                    <a>Connect</a>
+                    <img src="img/icon-arrow-dark.svg" class="arrow">
+                    <ul class="header-sub-menu">
+                        <li><a>Contact</a></li>
+                        <li><a>Newsletter</a></li>
+                        <li><a>Linkedin</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <hr>
+            <button id="login">Login</button>
+            <button id="signup">Sign Up</button>
+        </nav>
         <section class="header-hero">
             <h1 class="header-hero-title">A modern publishing platform</h1>
             <p id="header-hero-sub-title">Grown your audience and build your online brand</p>
@@ -113,5 +170,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
