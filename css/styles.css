@@ -1,4 +1,4 @@
-.flex, footer, footer .bottom-menu, .sections #section-1, .sections #section-1 .content-section-1, .sections #section-1 .content-section-1 .flex-section-1, .sections #section-2, .sections #section-2 .content-section-2 .flex-section-2, .sections #section-3, .sections #section-3 .content-section-3, .sections #section-3 .content-section-3 .flex-section-3, header, header .header-nav-bar, header .header-menu, header .header-menu li .header-sub-menu, header .header-buttons, header .header-menu-mobile, header .header-menu-mobile ul li .header-sub-menu, header .header-hero, header .header-hero .header-hero-buttons {
+.flex, footer .bottom-menu, .sections #section-1 .content-section-1 .flex-section-1, .sections #section-2 .content-section-2 .flex-section-2, .sections #section-3 .content-section-3 .flex-section-3, header .header-nav-bar, header .header-menu {
   display: flex;
   align-items: center;
 }
@@ -28,6 +28,8 @@ button {
 }
 
 header {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -67,6 +69,8 @@ header .header-menu li .header-sub-menu {
   font-weight: 600;
   position: absolute;
   text-align: left;
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   display: none;
@@ -84,6 +88,8 @@ header .header-menu li img {
   filter: grayscale(100%) brightness(200%);
 }
 header .header-buttons {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-direction: row;
@@ -114,6 +120,8 @@ header i {
   font-size: 1.6rem;
 }
 header .header-menu-mobile {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-direction: column;
@@ -144,6 +152,8 @@ header .header-menu-mobile ul li .header-sub-menu {
   position: relative;
   width: 90%;
   margin: 1.4rem auto;
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 1.1rem 0;
@@ -179,6 +189,8 @@ header .header-menu-mobile button:last-of-type {
   background-image: linear-gradient(120deg, #ff8f70 0%, #ff3d54 100%);
 }
 header .header-hero {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
@@ -195,6 +207,8 @@ header .header-hero p {
   font-weight: 400;
 }
 header .header-hero .header-hero-buttons {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-direction: row;
@@ -255,11 +269,16 @@ header .header-hero button:nth-of-type(2):hover {
   color: #2C2D3F;
 }
 .sections #section-1 {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
 }
 .sections #section-1 .content-section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 80%;
 }
@@ -286,6 +305,8 @@ header .header-hero button:nth-of-type(2):hover {
   color: #4b5862;
 }
 .sections #section-2 {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
@@ -319,12 +340,17 @@ header .header-hero button:nth-of-type(2):hover {
   color: #BEC8C2;
 }
 .sections #section-3 {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   margin-top: 10rem;
 }
 .sections #section-3 .content-section-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 80%;
 }
@@ -352,6 +378,8 @@ header .header-hero button:nth-of-type(2):hover {
 }
 
 footer {
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
@@ -439,6 +467,9 @@ footer .bottom-menu nav ul li:first-of-type {
     width: 100%;
   }
   .sections #section-1 .content-section-1 .flex-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
   .sections #section-1 .content-section-1 .flex-section-1 .img-section-1-mobile {
@@ -465,9 +496,10 @@ footer .bottom-menu nav ul li:first-of-type {
   .sections #section-2 .content-section-2 .flex-section-2 {
     width: 100%;
     height: 100%;
-    flex-direction: column;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     justify-content: flex-end;
     position: relative;
     padding-bottom: 2.5rem;
@@ -492,6 +524,9 @@ footer .bottom-menu nav ul li:first-of-type {
     width: 100%;
   }
   .sections #section-3 .content-section-3 .flex-section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
   .sections #section-3 .content-section-3 .flex-section-3 .img-section-3-mobile {
@@ -510,9 +545,11 @@ footer .bottom-menu nav ul li:first-of-type {
   }
 
   footer .bottom-menu {
-    width: 100%;
-    flex-direction: column;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
     padding: 0;
   }
   footer .bottom-menu nav {
@@ -523,8 +560,10 @@ footer .bottom-menu nav ul li:first-of-type {
 }
 @media (max-width: 600px) {
   .bottom-menu nav {
-    flex-direction: column;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .bottom-menu nav ul {
     text-align: center;

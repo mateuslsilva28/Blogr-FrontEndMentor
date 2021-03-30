@@ -34,8 +34,7 @@
         width: 100%;
 
         .content-section-1{
-            @extend .flex;
-            flex-direction: column;
+            @include mixin.center();
             width: 80%;
             
             .flex-section-1{
@@ -109,8 +108,7 @@
         margin-top: 10rem;
 
         .content-section-3{
-            @extend .flex;
-            flex-direction: column;
+            @include mixin.center();
             width: 80%;
 
             .flex-section-3{

@@ -1,7 +1,6 @@
 window.addEventListener("load", ()=>{
     var width = window.innerWidth;
     var itens_menu = document.getElementsByClassName("item-header-menu");
-    console.log(itens_menu)
     var itens_sub_menu = document.getElementsByClassName("header-sub-menu");
     var seta = document.getElementsByClassName("arrow");
     var hero = document.getElementsByClassName("header-hero")[0];
