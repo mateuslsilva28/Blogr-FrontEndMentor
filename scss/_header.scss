@@ -4,9 +4,9 @@
 @use "if";
 
 header {
-    @extend .flex;
+    @include mixin.center();
+    justify-content: flex-start;
     padding: 0 100px;
-    flex-direction: column;
     height: 500px;
     background-image: url("../img/bg-pattern-intro.svg"), linear-gradient(176deg, #ff8f70 0%, #ff3d54 100%);
     background-size: 200%;
@@ -33,21 +33,20 @@ header {
 
         li {
             cursor: pointer;
-            @include mixin.font;
+            @include mixin.font();
             display: inline-block;
             margin: 0 15px;
             position: relative;
 
             .header-sub-menu{
-                display: none;
                 width: 150%;
                 background-color: variables.$primary-color;
                 color: #4b5862;
                 font-weight: 600;
                 position: absolute;
                 text-align: left;
-                padding: 0;
-                flex-direction: column;
+                @include mixin.center();
+                display: none;
                 border-radius:5px;
                 margin-top: 1rem;
                 font-size: 1rem;
@@ -67,8 +66,8 @@ header {
     }
 
     .#{&}-buttons {
-        @extend .flex;
-        justify-content: center;
+        @include mixin.center();
+        flex-direction: row;
         width: 40%;        
         justify-self: flex-end;
     
@@ -90,20 +89,20 @@ header {
     i{cursor:pointer;font-size: 1.6rem}
 
     .#{&}-menu-mobile{
-        @extend .flex;
+        @include mixin.center();
         flex-direction: column;
-        justify-content: center;
         width: calc(100% - 20px);
         background-color: variables.$primary-color;
         color: #4b5862;
         font-weight: 600;
+        font-size: 1.1rem;
         margin-left: 30px;
         padding: 2rem 0;
         border-radius: 10px;
         transition: all 0.5s linear;
         box-shadow: 0px 11px 25px 3px #474747;
         position: absolute;
-        top: -100vh;
+        top: -150vh;
         ul{
             width: 100%;
 
@@ -118,9 +117,8 @@ header {
                     position: relative;
                     width: 90%;
                     margin: 1.4rem auto;
-                    @extend .flex;
+                    @include mixin.center();
                     padding: 1.1rem 0;
-                    flex-direction: column;
                     background-color: #EFEFF1;
                     display: none;
 
@@ -147,9 +145,7 @@ header {
     }
 
     .#{&}-hero{
-        @extend .flex;
-        flex-direction: column;
-        justify-content: center;
+        @include mixin.center();
         width: 100%;
         height: calc(500px - 150px);
 
@@ -165,13 +161,13 @@ header {
         }
 
         .header-hero-buttons{
-            @extend .flex;
+            @include mixin.center();
+            flex-direction: row;
             height: 100px;
-            justify-content: center;
             width: 40%;
 
             button {
-                @include mixin.font;
+                @include mixin.font();
                 margin: 0 10px;
                 padding: 3%;
                 min-width: 135px;

@@ -4,16 +4,77 @@
 .show-top{position: relative!important; top: 0vh!important;}
 
 @media (min-width:1024px){
+    header{height: 500px!important;}
     header .header-nav-bar .toggle, .show-top{display: none;}
+    .img-section-1-mobile{display: none;}
 }
 @media (max-width:1023px){
     header{
         padding: 0 35px;
-        height: 600px;
+        height: 600px!important;
 
     }
     .header-menu ul, .header-nav-bar .header-buttons{display: none;}
     .toggle{display: block;}
+    .sections{
+        #section-1{
+            text-align: center;
+
+            .flex-section-1{
+                flex-direction: column;
+                
+                .img-section-1-mobile{
+                    width: 100%;
+                    margin-top: 2rem;
+
+                    img{
+                        max-width: 400px;
+                        width: 90%;
+                    }
+                }
+
+                .text-section-1{
+                    padding-top: 2rem!important;
+                    width: 100%!important;}
+                .img-section-1{display: none;}
+            }
+        }
+        #section-2{
+            margin-top: 7rem;
+            height: 31rem!important;
+            background-size: 160%;
+            background-position: 49% 25%;
+
+            .content-section-2{
+
+                .flex-section-2{
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    position: relative;
+                    padding-bottom: 2.5rem;
+                    
+                    img{
+                        max-width: 331px;
+                        width: 100%;
+                        transform: scale(1);
+                        left: 0.6rem;
+                        top: 0;
+                        position: relative;
+                    }
+    
+                    .text-section-2{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+
+            }
+        }
+    }
 }
 
 @media (max-width:300px){

@@ -16,8 +16,7 @@ window.addEventListener("load", ()=>{
             hero.classList.add("hide")
             menu_mobile.classList.add("show-top")
             verifica = true;
-            window.addEventListener("resize", ()=>resize());
-            
+            window.addEventListener("resize", ()=>resize());            
         }
         else{
             mode_default()
@@ -69,15 +68,15 @@ window.addEventListener("load", ()=>{
             seta[id].classList.add("transform")
             bool[id] = true
             if(id >= 3){
-                header.style = "height: auto;"
+                header.style = "height: auto!important;"
             }
         }
         else{
             itens_sub_menu[id].classList.remove("active")
             seta[id].classList.remove("transform")
             bool[id] = false
-            if((bool[3]==false)&&(bool[4]==false)&&(bool[5] == false)){
-                header.style = "height: 600px;"
+            if((id>=3)&&(bool[3]==false)&&(bool[4]==false)&&(bool[5] == false)){
+                header.style = "height: 600px!important;"
             }
         }
 

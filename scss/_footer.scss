@@ -4,8 +4,7 @@
 @use "if";
 
 footer{
-    @extend .flex;
-    justify-content: center;
+    @include mixin.center();
     width: 100%;
     background-color: #25252D;
     margin-top: 5rem;

@@ -1,6 +1,12 @@
 @use "variables";
+@use "extend";
 @use "if";
 
+@mixin center {
+    @extend .flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 @mixin font {
     font-size: 1.1rem;
