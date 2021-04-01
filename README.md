@@ -6,16 +6,27 @@
   Blogr is a modern publishing platform. An editor that supports blog management
 </p>
 
-<p align="center">Project developed after the <strong>Sass course</strong> by instructor Matheus Battisti | <a href="https://www.udemy.com/">Udemy</a></p>
+<p align="center">Project developed after the <strong>Sass course</strong> by instructor Matheus Battisti | <a href="https://www.udemy.com/">Udemy</a> and after the <strong> <a href="https://www.youtube.com/watch?v=BaI8dHUthLA">Rocketseat Masterclass</a></strong>: "Dê super poderes ao CSS com SASS" </p>
 
 <hr>
 
 <p align="center">In this project, I learned many important concepts of the Sass preprocessor, such as Variables, Partials, Chaining, Mixins, Nesting, Conditionals, Repetitions, Functions, Inheritance and Referencing</p>
 
 <p align="center">
-  Made with 💖 by <a href="https://github.com/mateuslsilva28/">Mateus Coelho da Silva
+  Made with dedication by <a href="https://github.com/mateuslsilva28/">Mateus Coelho da Silva
 </p>
-  
+
+# :camera: Screenshoots
+<div align="center"> 
+    <h2 align="center">Desktop</h2>
+    <img width="50%" src="img/Layout-Desktop.png">
+    <img width="50%" src="img/Desktop-Active.png">
+    <h2 align="center">Mobile</h2>
+    <img width="50%" src="img/Layout-Mobile.png">
+    <img width="50%" src="img/Menu-Active.png">
+</div>
+
+<hr>
 
 # :rocket: Technologies
 In this project I used the following technologies
